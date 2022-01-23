@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@100&family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <title>Momentum</title>
+</head>
+<body>
+
+    
+        <!--로그인-->
+        <div id="login">
+            <form class="hidden" id="login-form">
+            <input 
+            required
+            maxlength="15"
+            type="text" 
+            placeholder="What is your name?"
+            >
+            <input type="submit" value="LogIn">
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+
+    <div id="wrap">
+        
+    <!--ToDoList-->
+         <div id="todo">
+            <form id="todo-form">
+                <input type="text" required placeholder="Write a To do">
+               </form>
+               <ul id="todo-list"></ul>
+        </div>
+        <div id="container">
+            
+        </div>
+    <div id="user-profile">
+        <div id="weather">
+            <span></span>
+            <span></span>
+            </div>
+        <div id="weathericon">
+            <img src="" alt="icon">
+        </div>
+<!--단백질량 계산-->
+<form class="hidden" id="protein-form">
+    <input 
+        required
+        maxlength="5"
+        type="text" 
+        placeholder="몸무게 입력"
+    >
+    <input type="submit" value="확인">
+</form>
+    <span id="userweight" class="hidden"></span>
+    <span id="eatprotein" class="hidden"></span>
+<!--칼로리 계산-->
+    <span id="cal" class="hidden"></span>
+    <button class="hidden" id="delprotein"></button>
+    </div>
+         <!--날씨-->
+         <div id="weather-form">
+    <!--        <div id="weather">
+                <span></span>
+                <span></span>
+                </div>
+            <div id="weathericon">
+                <img src="" alt="icon">
+            </div> -->
+        </div>
+        <div class="sec_cal">
+            <div class="cal_nav">
+              <a href="javascript:;" class="nav-btn go-prev">prev</a>
+              <div class="year-month"></div>
+              <a href="javascript:;" class="nav-btn go-next">next</a>
+            </div>
+            <div class="cal_wrap">
+              <div class="days">
+                <div class="day">MON</div>
+                <div class="day">TUE</div>
+                <div class="day">WED</div>
+                <div class="day">THU</div>
+                <div class="day">FRI</div>
+                <div class="day">SAT</div>
+                <div class="day">SUN</div>
+              </div>
+              <div class="dates"></div>
+            </div>
+          </div>
+    </div><!--wrap end-->
+       
+
+    </div>
+    
+    <!--시계-->
+    <h2 id="clock">00:00:00</h2>
+
+    
+    <!--명언-->
+    <div id="quotes">
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+   
+    <!--JS import-->
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/protein.js"></script>
+    <script src="./js/calendar.js"></script>
+</body>
+</html>
