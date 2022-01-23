@@ -37,11 +37,11 @@ function paintProtein(userweight) {
 
 function paintEatProtein(eatpt) {
     eatProtein.classList.remove(HIDDEN_CLASSNAME)
-    eatProtein.innerText = `daily protein intake : ${eatpt}g`
+    eatProtein.innerText = `Daily protein intake : ${eatpt}g`
 }
 function paintCal(calories) {
     cal.classList.remove(HIDDEN_CLASSNAME)
-    cal.innerText = `total calories per day : ${calories}kcal`
+    cal.innerText = `Total calories per day : ${calories}kcal`
 }
 function paintDelProtein() {
     delProtein.classList.remove(HIDDEN_CLASSNAME)
